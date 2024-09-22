@@ -1,7 +1,7 @@
 name: component_save_annotation
-description: "A new Flutter package project."
+description: "Useful for automating the documentation and tracking of widget components across projects."
 version: 0.0.1
-homepage:
+homepage: https://github.com/yunusemrealpak/component_save
 
 environment:
   sdk: ^3.5.3
