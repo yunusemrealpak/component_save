@@ -1,0 +1,14 @@
+builders:
+  component_builder_json:
+    import: "package:component_save_generator/builder.dart"
+    builder_factories: ["componentBuilderJson"]
+    build_extensions: { ".dart": [".component.json"] }
+    auto_apply: dependents
+    runs_before: ["component_builder_json|component_builder"]
+    build_to: cache
+  component_builder:
+    import: "package:component_save_generator/builder.dart"
+    builder_factories: ["componentBuilder"]
+    build_extensions: { ".dart": [".component.dart"] }
+    auto_apply: dependents
+    build_to: source
